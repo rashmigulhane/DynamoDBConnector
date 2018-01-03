@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DynamoConnector</groupId>
+  <artifactId>DynamoConnector</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!--Dependency:-->
+<dependencies>
+    
+    
+    <dependency>
+       <groupId>com.amazonaws</groupId>
+       <artifactId>DynamoDBLocal</artifactId>
+       <version>[1.11,2.0)</version>
+    </dependency>
+   <dependency>
+    <groupId>commons-logging</groupId>
+    <artifactId>commons-logging</artifactId>
+    <version>1.1.1</version>
+</dependency>
+   
+    
+</dependencies>
+<!--Custom repository:-->
+ <repositories>
+        <repository>
+            <id>dynamodblocal</id>
+            <name>AWS DynamoDB Local Release Repository</name>
+            <url>https://s3-us-west-2.amazonaws.com/dynamodb-local/release</url>
+        </repository>
+</repositories>
+
+</project>
